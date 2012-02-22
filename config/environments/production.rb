@@ -46,8 +46,7 @@ LessRailsBootstrapTest::Application.configure do
   config.assets.precompile += [
     'basic.css', 
     'basic_less.css',
-    'full_control.css',
-    'full_control.js'
+    'full_control.css'
   ]
 
   # Disable delivery errors, bad email addresses will be ignored
