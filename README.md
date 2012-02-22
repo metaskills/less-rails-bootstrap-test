@@ -6,7 +6,17 @@ Simple integration test project for both [less-rails](https://github.com/metaski
 
 # The Setup
 
-The `Gemfile` for this project has the latest less-rails and less-rails-bootstrap versions specified. It also has optional environment variables so you can specify a source path to a local checkout of each project. I have run `rake assets:precompile` and checked in all generated assets. That way it is easy to see if things work or what might be changed or not work when you ran `rake assets:clean` and then `rake assets:precompile` again to test.
+The `Gemfile` for this project has the latest less-rails and less-rails-bootstrap versions specified. It also has optional environment variables so you can specify a source path to a local checkout of each project. 
+
+You can run `rake assets:precompile` to make sure all the stylesheets and javascript manifest files are generated too for production use. The test suite files have their own names, remember that you have to set `config.assets.precompile` in production.rb like so to make this happen. I have already done this here though.
+
+```ruby
+config.assets.precompile += [
+  'basic.css', 
+  'basic_less.css',
+  'full_control.css'
+]
+```
 
 # CSS Tests Suites
 
