@@ -24,7 +24,7 @@ A review of our basic CSS test cases and different ways to use less-rails and le
 
 ### Basic Bootstrap
 
-http://less-rails-bootstrap-test.dev/assets/basic.css
+http://localhost:3000/assets/basic.css
 
 Does not get any more simple, require the entire bootstrap code. This does not give you access to any of the variables or mixins, just a final processed file.
 
@@ -36,7 +36,7 @@ Does not get any more simple, require the entire bootstrap code. This does not g
 
 ### Basic Less Bootstrap
 
-http://less-rails-bootstrap-test.dev/assets/basic_less.css
+http://localhost:3000/assets/basic_less.css
 
 Requires a Less file which uses an `@import` to to bring in bootstrap. 
 
@@ -58,7 +58,7 @@ Unlike using a sprockets manifest, this gives you access to the variables and mi
 
 ### Full Control & Customization
 
-http://less-rails-bootstrap-test.dev/assets/full_control.css
+http://localhost:3000/assets/full_control.css
 
 This is the end all method for any "I need..." type of request. That could include customizing variables, mixins to anything else. Honestly. Just like the Less method above your main asset manifest requires a delegate Less file.
 
