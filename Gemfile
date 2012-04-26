@@ -8,6 +8,7 @@ gem 'jquery-rails'
 group :assets do
   gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'therubyracer'
   if ENV['LESS_RAILS_SOURCE']
     gem 'less-rails', :path => ENV['LESS_RAILS_SOURCE']
   else
